@@ -1,0 +1,85 @@
+/*
+
+These comments should span multiple lines
+
+*/
+
+/* 
+
+list of CSS selectors
+            - Element selector: is going to select all instances of the given tag from our HTML page.
+            -body
+            -p
+            img
+
+
+*/
+
+p, h1 {
+/*  select all <p> tags*/ 
+/*  by using these a coma, I can have this type effect multiple different tags at the same time */
+/*  property: value ; */
+
+color: orangered;
+background-color: rebeccapurple;
+}
+
+
+body {
+
+background-color: rgb(100,150,60);
+/*  in Css we have 3 major ways to refer to a color:display: 
+        -color keywords:
+            -green, blue, rebeccapurple
+         -RGB value
+                -rgb (0-255, 0-255, 0-255)
+                -Each one of these numbers represents how strong either the red, blue, or green is in color
+                -#ffffff (white) */
+
+}
+
+a {
+ text-decoration: underline !important;
+}
+
+
+
+/*  Classes are accessed with the '.' followed by the class name
+    -Useful for targeting multiple elements */
+.header {
+color: blue;
+background-color: pink;
+}
+
+.btn {
+text-decoration:none;
+/* border */
+border: 2px solid yellow;
+background-color: beige;
+border-radius: 5px;}
+
+nav .btn {
+    text-shadow: 1px 1 px 5px black;}
+
+
+ nav > .btn {
+
+    background-color: aquamarine;
+ }   
+
+/*  IDs are accessed with the '#' symbol, followed by the id name. 
+    -for targeting a single element */
+
+
+
+
+
+/* Id's are accesed with the '#' symbol, followed by the id name. 
+    -for targeting a single element */
+#unique {
+    text-decoration: underline overline;
+    background-color: steelblue;
+    color: lightblue;
+    border-radius: 25px;
+
+}
