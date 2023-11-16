@@ -1,0 +1,73 @@
+h3 {
+    border: 1px solid purple;
+    background-color: crimson;
+    padding: 0.3em;
+    Margin:0;
+}
+
+
+
+
+.Grid_basics {
+/* by default a grid will be in rows */
+/* ?spans across the whole container */
+/* display: grid; */
+/* ?spans to item width */
+display: inline-block;
+
+}
+
+.Grid_Explicit {
+
+    display: grid;
+    /*  specifying the row height */
+    /* grid-template-rows: 150px 120px; */
+    /*  specify the column width */
+    /* grid-template-rows: 90px; */
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-templates-rows: 1fr 1fr 4fr;
+    /* Targets both rows + columns  */
+    /* gap: 1em; */
+    /*  Specify gap of column and row */
+    /*  first value targets rows, second value targets columns */
+     gap: 0.4em;
+}
+
+.Grid_Template {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "head head"
+    "nav main"
+    "footer footer";
+    grid-template-rows: 50px 20em 3em;
+    grid-template-columns: .5fr 4fr;
+    
+    
+                          
+    /* grid-template-areas */
+
+}
+
+header {
+background-color: blue;
+grid-area: head;
+}
+
+nav {
+background-color: green;
+grid-area: nav;
+
+}
+
+footer {
+
+    background-color: red;
+    grid-area: footer;
+}
+
+main {
+
+    background-color: purple;
+    grid-area: main;
+}
