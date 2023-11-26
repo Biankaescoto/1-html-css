@@ -1,0 +1,113 @@
+/*  * is like a wild card selector. Here we removed the white space once we started to "fix the website"  */
+* {
+margin: 0;
+padding:0;
+border: 0;
+}
+
+body {
+
+    background-color: beige;
+    font-family: Helvetica, sans-serif;
+    /* if the font you choose has a space you have to put it in quotes.  */
+    display: flex;
+    /* flex by default will place things in a row  */
+    flex-direction: column;
+    width: 100vw;
+}
+
+nav {
+ background-color: rgb(87, 107,220);
+    display: flex;
+    /* Allows us to change the direction of the flex */
+    flex-direction: row;
+    /*  flex-direction is also a row or column */
+    /* aligns flex items to the end */
+    justify-content:flex-end; 
+    /* allows us to modify the space between flex items */
+    gap:1em ;
+    align-items: center;
+    /* testing out height with the swap of justify and align
+    items. Row vs column */
+   height: 5em;
+   color:white;
+}
+
+
+.nav-link {
+    text-decoration: none;
+   color: white;
+}
+
+.main-container { 
+    margin-top: 3em;
+    border: 2px solid black;
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 1em;
+
+    /* some css properties are notated as comments for the sake of example 
+    -flex-wrap: adjust content to screen size*/
+ }
+
+
+.c {
+width: 200px;
+height:100px;
+min-width: 200px;
+min-height:100px;
+}
+
+.c1 {
+
+border: 2px solid red;
+}
+
+.c2 {
+
+border: 2px solid black;
+}
+
+.c3 {
+
+border: 2px solid blue;
+}
+
+.c4 {
+
+border: 2px solid violet;
+}
+
+.c5 {
+border: 2px solid green;
+}
+
+.article-preview {
+    margin-top: 1em;
+    width:100vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; <-- (this helps web pages to fir entire screen such as mobile, tablets, comp etc) */
+   }
+
+
+
+.article-preview img {
+    width: 250px;
+    height: 250px;
+     object-fit: cover;
+}
+
+.article-preview .text {
+max-width: 400px;
+}

@@ -1,0 +1,62 @@
+/* 
+common units of measurement
+-percentages: %
+viewport width: vw
+- viewport-height: vh
+-root element font size: rem
+- parent font size: em
+
+
+Using Media Queries: 
+ex: 
+
+@media screen { <----- target screens only
+    
+    div { <-- element to adjust
+        background-color blue;
+
+    }
+        
+        
+        AND 
+        @media is screen and (min-width;750px) {
+
+            ***element here***
+        }
+        
+        
+        OR @media screen, (min-width: 750px) {
+
+            ...
+        }
+    ;
+        
+        Build with Mobile first concept!
+        
+        */
+
+        /* @media (max-width: 480px) {
+            
+            body {
+                background-color: darkred; }*/
+
+                @media screen and (max-width:140px) and (orientation landscape) {
+                  
+
+                    footer{
+
+                        font-size:larger;
+
+                    }
+                    nav {
+
+                        font-size: larger:
+                    }
+                }
+
+                /* easy way to test if the m query works, it targets something general like the body tag */
+                /* body {
+                    background:red; } */
+
+
+
